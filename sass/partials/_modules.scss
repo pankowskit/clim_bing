@@ -1,7 +1,68 @@
 @include aoa-bg-series($section__classes,$section__images);
 
+.about{
+    &-s2{
+        background-position: right!important;
+    }
+}
 .comingsoon,.error,.privacy{
     &-s1{
         background-blend-mode: multiply;
+    }
+}
+.contact{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply;
+    }
+}
+.courses{
+    &-s4{
+        background-color: #999!important;
+        background-blend-mode: multiply;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+@media all and (max-width: 767px){
+    .about,.contact{
+        &-s1,&-s2{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply;
+            background-position: right!important;
+        }
+    }
+    .courses{
+        &-s1,&-s2,&-s3{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply;
+            background-position: right!important;
+        }
+    }
+    .index{
+        &-s1{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply;
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #999;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px;
+        }
     }
 }
